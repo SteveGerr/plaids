@@ -1,0 +1,1001 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+a {
+	text-decoration: none;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	margin:0;
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+	background: #fff;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	display: block;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 50px;
+	width: 100%;
+	background: #FFE680;
+	display: flex;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+/* .content {
+
+} */
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	width: 100%;
+	height: 30px;
+	background: #BFF08E;
+	display: block;
+}
+
+
+
+/* Верхнее меню */
+
+.background_nav {
+	width: 100%;
+	display: block;
+/* Приклеить меню к верху экрана
+-----------------------------------------------------------------------------
+	position: fixed;
+	z-index: 9999;
+	margin-top: -50px;
+*/
+}
+
+.vverh {
+	position: fixed;
+	z-index: 9999;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0.5;
+}
+
+.nav {
+max-width: 1080px;
+display: flex;
+margin:20px auto 0;
+height: 50px;
+padding: 0 150px;
+}
+
+.nav a {
+font-size: 20px;
+color: #524f53;
+margin: 6px auto 0;
+padding: 10px 15px;
+white-space: nowrap;
+/* border-radius: 5px; */
+}
+
+.nav a:hover::after {
+	width: 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+}
+
+.nav a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	margin: 5px 0 0 0;
+	background: #01bf9d;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+}
+
+
+
+/* КОНЕЦ Верхнее меню */
+
+
+
+
+
+/* Верх с описанием и Алиной */
+
+.backgroung_slider {
+	width: 100%;
+	display: block;
+}
+
+.slider {
+max-width: 1080px;
+height: 450px;
+display: flex;
+margin:0 auto;
+position: relative;
+}
+
+.bg {
+	position: absolute;
+	right: 420px;
+	bottom: -120px;
+	z-index: -9000;
+}
+
+
+.texte-slider {
+width: 450px;
+position: relative;
+}
+
+.texte-slider h1 {
+font-size: 27px;
+margin: 30px 0px 0px 30px;
+font-weight: 600;
+line-height: 1.4;
+color: #333333;
+}
+
+.texte-slider p {
+font-size: 27px;
+margin: 17px 0px 0px 30px;
+line-height: 1.7;
+color: #424242;
+}
+
+.advantages {
+	display: flex;
+	flex-direction: column;
+	padding-left: 65px;
+}
+.advantages__row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+}
+.advantages__row p {
+	font-size: 20px;
+}
+
+.advantages__row img {
+	position: absolute;
+	top: 20px;
+	left: -5;
+}
+
+.texte-slider img {
+width: 25px;
+height: 25px;
+}
+
+
+.texte-slider a {
+font-size: 30px;
+font-weight: 700;
+background: #ff0000;
+position: absolute;
+padding: 15px 25px;
+bottom: 0;
+right: 120px;
+color: #fff;
+border-radius: 10px;
+}
+
+.texte-slider a:hover {
+	background: #cb0000;
+}
+
+.photo_slider {
+max-width: 630px;
+}
+
+@media (max-width: 1120px) {
+	.photo_slider {
+		position: absolute;
+    right: 0;
+	}
+}
+
+.photo1 img{
+width: 185px;
+margin: 10px 0px 0px 300px;
+}
+
+
+.photo2 img{
+margin: 150px 0px 0px 0px;
+}
+
+
+.photo3 img{
+margin: 0px 0px 0px 475px;
+}
+
+.photo4 img{
+margin: 350px 0px 0px 0px;
+}
+
+@media (max-width: 1224px) {
+	.photo_slider .photo3 img {
+		display: none;
+	}
+
+}
+
+/* КОНЕЦ Верх с описанием и Алиной */
+
+
+
+/* Олег Лена и форма заказа */
+
+.background_size {
+	width: 100%;
+	display: block;
+	margin-top: 115px;
+}
+
+.size_pled {
+	max-width: 1080px;
+	height: 500px;
+	display: flex;
+	margin:0 auto;
+	position: relative;
+}
+@media (max-width: 1184px) {
+	.size_pled {
+		margin-left: 5%;
+	}
+}
+
+.size_texte {
+	width: 750px;
+}
+
+.ph_size img {
+	max-width: 720px;
+	bottom: -8px;
+	left: 0;
+	/*right: 330px;
+	*/position: absolute;
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	border-right: 2px solid  #00c09d;
+	/* border-top: 8px solid  #00c09d; */
+}
+
+
+
+.ph_size2 img{
+	display: none;
+width: 200px;
+height: 200px;
+top: 150px;
+left: 15px;
+position: absolute;
+}
+
+.ph_size2__slogan {
+	display: flex;
+	/*width: 200px;
+	*//*height: 200px;*/
+	width: 360px;
+	height: 220px;
+	border-radius: 40% 0 40% 0;
+	-webkit-border-radius: 40% 0 40% 0;
+	-moz-border-radius: 40% 0 40% 0;
+	-ms-border-radius: 40% 0 40% 0;
+	-o-border-radius: 40% 0 40% 0;
+	background: #00c09d;
+	top: 150px;
+	/*left: 15px;*/
+	right: 80px;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	font-size: 34px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 50px;
+}
+
+@media (max-width: 993px) {
+	.ph_size2__slogan {
+		width: 270px;
+		height: 150px;
+		font-size: 25px;
+	}
+}
+
+.ph_size2 img:hover {
+width: 220px;
+height: 220px;
+top: 140px;
+left: 5px;
+-moz-transform: rotate(7deg); /* Для Firefox */
+    -ms-transform: rotate(7deg); /* Для IE */
+    -webkit-transform: rotate(7deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(7deg); /* Для Opera */
+    transform: rotate(7deg);
+}
+
+/* ТАблица размеров */
+.block-size-table {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px auto;
+}
+@media (min-width: 1121px) {
+	.block-size-table {
+		display: none;
+	}
+}
+
+.block-size-table__row {
+	display: flex;
+	flex-direction: row;
+	background: #fff75c;
+}
+
+.block-size-table__col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 50px;
+	border: 1px solid #424242;
+}
+
+.size_texte p{
+/* margin: 20px 15px; */
+margin: 26px 0 0 0;
+position: absolute;
+font-size: 30px;
+/* color: #000; */
+color: #00c09d;
+line-height: 1.4;
+}
+
+.for {
+	/* display: none; */
+	width: 330px;
+	height: 400px;
+	text-align: center;
+	background: #fff75c;
+	display: inline;
+	position: relative;
+}
+
+.otstup {
+	margin-top: 100px;
+}
+
+.for img {
+	width: 45px;
+	height: 45px;
+	padding: 15px 15px;
+}
+
+.ppp{
+	width: 330px;
+	position: absolute;
+	z-index: 20;
+	margin: 0 auto;
+}
+
+.for a:hover img {
+	width: 51px;
+	height: 51px;
+	padding: 12px 12px;
+}
+
+
+.for h3 {
+	margin: 20px 0px 15px 0px;
+font-size: 27px;
+color: #000;
+font-weight: 500;
+}
+
+
+#forma input[type="text"] {
+	width: 250px;
+	height: 40px;
+	font-size: 18px;
+	margin: 12px 5px;
+	/*border-radius: 5px;
+	*/text-align: center;
+}
+
+#forma input[type="text"]:focus {
+	border-radius: 0;
+	border: 1px solid #104e9e;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	outline: none;
+}
+
+
+#forma input[type="submit"]{
+width: 250px;
+height: 45px;
+font-size: 18px;
+margin: 5px 15px;
+border: none;
+/* border-radius: 5px; */
+text-align: center;
+color: #fff;
+/* background-color: #ff0000; */
+background: #104e9e;
+font-weight: 500;
+cursor: pointer;
+}
+
+#forma input[type="submit"]:hover{
+background: #4985d2;
+
+}
+
+/*КОНЕЦ  Олег Лена и форма заказа */
+
+
+
+
+/* Бесплатный макет и упаковка */
+.price_bg {
+	display: block;
+	width: 100%;
+	height: 250px;
+	margin-top: -90px;
+	position: relative;
+	background: url(img/price_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+@media (max-width: 1120px) {
+	.price_bg {
+		display: flex;
+		align-items: flex-end;
+	}
+}
+
+.free-layout {
+	display: none;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 0 10%;
+}
+
+@media (max-width: 1120px) {
+	.free-layout {
+		display: flex;
+	}
+}
+
+.free-layout__col {
+	display: flex;
+	align-items: center;
+	width: 25%;
+	height: 130px;
+}
+
+.price_poloska {
+	max-width: 1080px;
+	height: 242px;
+	display: flex;
+	margin: 0 auto;
+	position: relative;
+	/* top: -90px; */
+	top: 165px;
+}
+
+@media (max-width: 1120px) {
+	.price_poloska {
+		display: none;
+	}
+	/* Изображение бесплатного макета */
+	.free-layout__img {
+		background: url("img/maket.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	/* Изображение упаковки */
+	.free-pack__img {
+		background: url("img/upak.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+}
+
+.price_bg p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	font-style: italic;
+	color: #000;
+}
+@media (max-width: 1120px) {
+	.price_bg p  {
+		font-size: 20px;
+	}
+}
+
+.price_img img {
+	width: 100%;
+}
+
+.price_img1 img{
+	margin: -60px 280px;
+	position: absolute;
+}
+.price_img2 {
+	margin: -130px 780px;
+	position: absolute;
+}
+.price_tx1 {
+	margin: -30px 30px;
+	position: absolute;
+}
+.price_tx2 {
+	margin: -65px 510px;
+	position: absolute;
+}
+
+
+
+/* КОНЕЦ Бесплатный макет и упаковка */
+
+
+
+
+
+/* Основные Преимущества и Цены */
+
+.background_price {
+	width: 100%;
+	/* height: 500px; */
+	background: #01bf9d;
+	margin-top: -30px;
+	padding-bottom: 50px;
+}
+
+.price {
+	max-width: 1080px;
+	display: flex;
+	margin: 0 auto;
+	position: relative;
+}
+
+.price_img {
+	max-width: 750px;
+	max-height: 450px;
+	margin-top: 40px;
+
+}
+
+@media (max-width: 1120px) {
+	.price_img {
+		margin: 40px auto 20px;
+	}
+}
+
+.price a {
+font-size: 30px;
+font-weight: 700;
+/* background: #ff0000; */
+background: #104e9e;
+position: absolute;
+padding: 15px 25px;
+margin-top: 444px;
+right: 50px;
+color: #fff;
+border-radius: 10px;
+}
+
+.price a:hover {
+	/* color: #; */
+	/* background: #cb0000; */
+	background: #4985d2;
+}
+
+
+.tablica tr:hover{
+	background-color: #aaa;
+}
+.tablica th{
+	padding: 15px 15px;
+	display		: table-cell;
+	vertical-align	: middle;
+}
+
+.tablica table{
+	max-width: 330px;
+	margin: 50px 0px;
+	background: #fff75c;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: italic;
+	color: #000;
+	position: table;
+}
+
+.tablica p{
+	max-width: 330px;
+	display: flex;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	margin-top: 395px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+
+.tablica{
+	max-width: 330px;
+	height: 500px;
+	display: flex;
+	right: 150px;
+	margin-left: 40px;
+}
+
+@media (max-width: 1120px) {
+	.tablica {
+		display: none;
+	}
+}
+
+
+/* КОНЕЦ Основные Преимущества и Цены */
+
+
+
+
+/* Преимущества*/
+.background_preim {
+	display: block;
+	width: 100%;
+	/* height: 330px; */
+	margin: 70px 0 0 0;
+	background: #01bf9d;
+}
+
+.preim {
+	max-width: 1080px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px auto 0;
+	padding: 50px 0 120px;
+	position: relative;
+}
+
+.pr1 {
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+}
+
+.pr1 img {
+	width: 190px;
+	height: 190px;
+}
+
+.pr1 img:hover {
+	width: 200px;
+	height: 200px;
+}
+
+.pr1 p {
+	margin-top: 10px;
+	margin-left: -10px;
+	width: 220px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.preim_h3 {
+	width: 100%;
+  text-align: center;
+	margin: 10px auto 45px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	display: block;
+
+}
+
+
+
+.background_photo_sl {
+	display: block;
+	width: 100%;
+	height: 380px;
+	margin: 50px 0 0 0;
+}
+
+.photo_sl {
+	max-width: 1080px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.sl_h3 {
+	text-align: center;
+	margin: 15px auto 45px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+/* ЗАказать звонок */
+.feedback {
+	display: flex;
+	padding: 50px 0;
+	background: url("images/feedback-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.feedback h3 {
+	margin: 0 0 20px 0;
+	font-size: 30px;
+	text-align: center;
+}
+
+.feedback__form {
+	width: 100%;
+}
+
+.feedback form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* margin: 50px 0 50px 0; */
+}
+
+/* Footer */
+footer {
+	background:#525252 ;
+}
+
+.ft {
+	color: #000;
+	font-size: 33px;
+	margin-top: 15px;
+}
+
+.background_contakt {
+	width: 100%;
+	display: block;
+}
+
+.contakt {
+	max-width: 1080px;
+	height: 400px;
+	display: flex;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+.contakt_tex {
+	width: 750px;
+	display: inline-block;
+	padding: 50px 0 0 0;
+}
+
+
+.contakt_tex h3{
+	margin: 15px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	position: absolute;
+}
+
+
+
+.con p {
+	margin: 80px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	position: absolute;
+
+}
+
+.con img{
+	width: 35px;
+	height: 35px;
+	margin: -9px 15px;
+}
+
+
+.con {
+	min-width: 400px;
+	height: 50px;
+	margin: 15px 0px;
+}
+
+.con a {
+ color: #000;
+ font-weight: 500;
+}
+
+.con a:hover {
+ /* color: #08767d; */
+ color: rgb(226, 225, 225);
+ font-weight: 700;
+}
+
+
+
+
+
+.dostav img{
+max-width: 720px;
+height: 200px;
+top: 85px;
+left: 400px;
+position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+
+
+}
+@media (max-width:854px) {
+
+}
+@media (max-width:812px) {
+
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:736px) {
+
+}
+@media (max-width:667px) {
+
+}
+@media (max-width:600px) {
+
+}
+@media (max-width:480px) {
+
+}
+@media (max-width:425px) {
+
+}
+@media (max-width:414px) {
+
+}
+@media (max-width:384px) {
+
+}
+@media (max-width:375px) {
+
+}
+
+@media (max-width:360px) {
+
+}
+@media (max-width:320px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
