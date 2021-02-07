@@ -195,6 +195,7 @@ position: relative;
 .texte-slider {
 width: 450px;
 position: relative;
+z-index: 5;
 }
 
 .texte-slider h1 {
@@ -313,7 +314,7 @@ margin: 350px 0px 0px 0px;
 }
 @media (max-width: 1184px) {
 	.size_pled {
-		margin-left: 5%;
+		display: none;
 	}
 }
 
@@ -323,23 +324,14 @@ margin: 350px 0px 0px 0px;
 
 .ph_size img {
 	max-width: 720px;
-	bottom: -8px;
-	left: 0;
-	/*right: 330px;
-	*/position: absolute;
-	transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	-moz-transform: scaleX(-1);
-	-ms-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	border-right: 2px solid  #00c09d;
-	/* border-top: 8px solid  #00c09d; */
+	bottom: 0px;
+	right: 330px;
+	position: absolute;
 }
 
 
 
 .ph_size2 img{
-	display: none;
 width: 200px;
 height: 200px;
 top: 150px;
@@ -350,25 +342,24 @@ position: absolute;
 .ph_size2__slogan {
 	display: flex;
 	/*width: 200px;
-	*//*height: 200px;*/
-	width: 360px;
-	height: 220px;
-	border-radius: 40% 0 40% 0;
-	-webkit-border-radius: 40% 0 40% 0;
-	-moz-border-radius: 40% 0 40% 0;
-	-ms-border-radius: 40% 0 40% 0;
-	-o-border-radius: 40% 0 40% 0;
+	*//*height: 200px;
+	*/width: 205px;
+	height: 205px;
+	border-radius: 50% 0 50% 0;
+	-webkit-border-radius: 50% 0 50% 0;
+	-moz-border-radius: 50% 0 50% 0;
+	-ms-border-radius: 50% 0 50% 0;
+	-o-border-radius: 50% 0 50% 0;
 	background: #00c09d;
 	top: 150px;
-	/*left: 15px;*/
-	right: 80px;
+	left: 15px;
 	position: absolute;
 	justify-content: center;
 	align-items: center;
-	font-size: 34px;
-	font-weight: 600;
+	font-size: 30px;
+	font-style: italic;
 	color: #fff;
-	line-height: 50px;
+	line-height: 40px;
 }
 
 @media (max-width: 993px) {
@@ -389,6 +380,43 @@ left: 5px;
     -webkit-transform: rotate(7deg); /* Для Safari, Chrome, iOS */
     -o-transform: rotate(7deg); /* Для Opera */
     transform: rotate(7deg);
+}
+
+/* Mobile block sizes */
+.block-sizes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 0 75px 0;
+}
+.block-sizes__form {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0 0 0;
+	padding: 20px;
+	background: #fff75c;
+}
+.block-sizes__form h3 {
+	font-size: 27px;
+	font-weight: 500;
+	text-align: center;
+}
+.block-sizes__form form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.block-sizes__social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+.block-sizes__img {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
 }
 
 /* ТАблица размеров */
@@ -497,17 +525,16 @@ height: 45px;
 font-size: 18px;
 margin: 5px 15px;
 border: none;
-/* border-radius: 5px; */
+border-radius: 5px;
 text-align: center;
 color: #fff;
-/* background-color: #ff0000; */
-background: #104e9e;
+background-color: #ff0000;
 font-weight: 500;
 cursor: pointer;
 }
 
 #forma input[type="submit"]:hover{
-background: #4985d2;
+background: #cb0000;
 
 }
 
@@ -656,16 +683,30 @@ background: #4985d2;
 }
 
 @media (max-width: 1120px) {
+	.price  {
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 	.price_img {
 		margin: 40px auto 20px;
 	}
+	.order-mob {
+		position: relative!important;
+    display: flex;
+    margin: 0 auto!important;
+    right: 0!important;
+	}
+	.order-desk {
+		display: none!important;
+	}
+
 }
 
 .price a {
 font-size: 30px;
 font-weight: 700;
-/* background: #ff0000; */
-background: #104e9e;
+background: #ff0000;
 position: absolute;
 padding: 15px 25px;
 margin-top: 444px;
@@ -676,8 +717,7 @@ border-radius: 10px;
 
 .price a:hover {
 	/* color: #; */
-	/* background: #cb0000; */
-	background: #4985d2;
+	background: #cb0000;
 }
 
 
@@ -725,7 +765,8 @@ border-radius: 10px;
 
 @media (max-width: 1120px) {
 	.tablica {
-		display: none;
+		height: 450px;
+		margin-left: 0;
 	}
 }
 
@@ -815,40 +856,6 @@ border-radius: 10px;
 	font-size: 30px;
 	font-weight: 700;
 }
-
-/* ЗАказать звонок */
-.feedback {
-	display: flex;
-	padding: 50px 0;
-	background: url("images/feedback-bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.feedback h3 {
-	margin: 0 0 20px 0;
-	font-size: 30px;
-	text-align: center;
-}
-
-.feedback__form {
-	width: 100%;
-}
-
-.feedback form {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	/* margin: 50px 0 50px 0; */
-}
-
-/* Footer */
-footer {
-	background:#525252 ;
-}
-
 .ft {
 	color: #000;
 	font-size: 33px;
