@@ -87,8 +87,6 @@ body {
 } */
 
 
-
-
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
@@ -127,6 +125,12 @@ display: flex;
 margin:20px auto 0;
 height: 50px;
 padding: 0 150px;
+}
+
+@media (max-width: 1120px) {
+	.nav {
+		display: none;
+	}
 }
 
 .nav a {
@@ -341,9 +345,7 @@ position: absolute;
 
 .ph_size2__slogan {
 	display: flex;
-	/*width: 200px;
-	*//*height: 200px;
-	*/width: 205px;
+	width: 205px;
 	height: 205px;
 	border-radius: 50% 0 50% 0;
 	-webkit-border-radius: 50% 0 50% 0;
@@ -360,6 +362,43 @@ position: absolute;
 	font-style: italic;
 	color: #fff;
 	line-height: 40px;
+}
+
+.ph_size2__slogan_mobile {
+	display: none;
+	width: 205px;
+	min-width: 205px;
+	height: 205px;
+	border-radius: 50% 0 50% 0;
+	-webkit-border-radius: 50% 0 50% 0;
+	-moz-border-radius: 50% 0 50% 0;
+	-ms-border-radius: 50% 0 50% 0;
+	-o-border-radius: 50% 0 50% 0;
+	background: #00c09d;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-style: italic;
+	color: #fff;
+	line-height: 40px;
+}
+
+@media (max-width: 1184px) and (min-width: 768px) {
+	.ph_size2__slogan_mobile  {
+		display: flex;
+		margin: 0 0 0 20%;
+	}
+}
+
+@media (max-width: 767px) {
+	.ph_size2__slogan_mobile  {
+		display: flex;
+		margin: 0 0 0 2%;
+	}
+	.ph_size2__slogan_mobile img {
+		max-width: 365px;
+	}
+
 }
 
 @media (max-width: 993px) {
@@ -389,11 +428,13 @@ left: 5px;
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 0 75px 0;
+	position: relative;
 }
 .block-sizes__form {
 	display: flex;
 	flex-direction: column;
-	margin: 30px 0 0 0;
+	max-width: 320px;
+	margin: 30px auto 0;
 	padding: 20px;
 	background: #fff75c;
 }
@@ -418,6 +459,26 @@ left: 5px;
 	justify-content: flex-end;
 	width: 100%;
 }
+.block-sizes__variant {
+	margin: 20px 15px;
+	font-size: 30px;
+	color: #000;
+	line-height: 1.4;
+}
+
+@media (max-width: 1184px) {
+	.block-sizes__img {
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 993px) {
+	.block-sizes__img img {
+		width: 100%;
+		max-width: 500px;
+	}
+}
+
 
 /* ТАблица размеров */
 .block-size-table {
@@ -448,13 +509,11 @@ left: 5px;
 }
 
 .size_texte p{
-/* margin: 20px 15px; */
-margin: 26px 0 0 0;
-position: absolute;
-font-size: 30px;
-/* color: #000; */
-color: #00c09d;
-line-height: 1.4;
+	margin: 20px 15px;
+	position: absolute;
+	font-size: 30px;
+	color: #000;
+	line-height: 1.4;
 }
 
 .for {
@@ -794,6 +853,14 @@ border-radius: 10px;
 	position: relative;
 }
 
+@media (max-width: 1023px) {
+	.preim .pr1 {
+		min-width: 200px;
+		height: auto;
+		margin: 0 12%;
+	}
+}
+
 .pr1 {
 	width: 200px;
 	height: 200px;
@@ -867,6 +934,43 @@ border-radius: 10px;
 	display: block;
 }
 
+.mobile-form-footer .block-sizes__form {
+	display: none;
+
+}
+@media (max-width: 1120px) {
+	.mobile-form-footer .block-sizes__form {
+		display: flex;
+	}
+}
+
+@media (max-width: 1120px) {
+	.background_contakt .for {
+		display: none;
+	}
+
+}
+
+/* Обёртка карты */
+.wrap-map {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.wrap-map img {
+	display: none;
+	width: 100%;
+	max-width: 580px;
+	margin: 50px 0 0 0;
+}
+
+@media (max-width: 767px) {
+	.wrap-map img {
+		display: flex;
+	}
+}
+
 .contakt {
 	max-width: 1080px;
 	height: 400px;
@@ -938,7 +1042,11 @@ left: 400px;
 position: absolute;
 }
 
-
+@media (max-width: 768px) {
+	.dostav img {
+		display: none;
+	}
+}
 
 
 
