@@ -30,6 +30,11 @@ var swiper = new Swiper('.swiper-container', {
         console.log("click");
         toggleBlock.classList.toggle("is-toggle");
       });
+      burgerBtn.addEventListener("touchmove", () => {
+        console.log("click");
+        toggleBlock.classList.toggle("is-toggle");
+      });
+
     }
 })()
 
