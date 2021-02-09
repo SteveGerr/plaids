@@ -184,7 +184,7 @@ white-space: nowrap;
 	display: flex;
 	width: 30px;
 	height: 30px;
-	background: url("/img/menu.png");
+	background: url("img/menu.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
