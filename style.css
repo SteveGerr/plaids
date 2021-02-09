@@ -165,8 +165,47 @@ white-space: nowrap;
 	-o-transition: all .3s;
 }
 
-
-
+/* Мобильное меню */
+.nav-mobile {
+	display: flex;
+	flex-direction: column;
+}
+.nav-panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-burger {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	background: url("/images/menu.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.nav-panel-phone {
+	display: flex;
+	align-items: center;	
+}
+.nav-panel-phone p {
+	font-weight: 600;
+	color: #424242;
+}
+.nav-panel-phone img {
+	width: 40px;
+	margin: 0 10px 0 0;
+}
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.nav-links a {
+	margin: 2px auto;
+	font-size: 20px;
+	color: #424242;
+}
 /* КОНЕЦ Верхнее меню */
 
 
