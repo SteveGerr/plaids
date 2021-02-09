@@ -167,8 +167,13 @@ white-space: nowrap;
 
 /* Мобильное меню */
 .nav-mobile {
-	display: flex;
+	display: none;
 	flex-direction: column;
+}
+@media (max-width: 1120px) {
+	.nav-mobile {
+		display: flex;
+	}
 }
 .nav-panel {
 	display: flex;
@@ -179,7 +184,7 @@ white-space: nowrap;
 	display: flex;
 	width: 30px;
 	height: 30px;
-	background: url("/images/menu.png");
+	background: url("/img/menu.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
