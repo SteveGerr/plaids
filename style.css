@@ -309,10 +309,22 @@ font-weight: 600;
 line-height: 1.4;
 color: #333333;
 }
-@media (max-width: 440px) {
+@media (max-width: 540px) {
 	.texte-slider h1 {
+		max-width: 400px;
 		font-size: 20px;
-
+	}
+}
+@media (max-width: 450px) {
+	.texte-slider h1 {
+		max-width: 288px;
+		font-size: 20px;
+	}
+}
+@media (max-width: 400px) {
+	.texte-slider h1 {
+		max-width: 212px;
+		font-size: 20px;
 	}
 }
 
