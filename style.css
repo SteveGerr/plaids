@@ -227,6 +227,11 @@ white-space: nowrap;
 	width: 100%;
 	max-height: 0;
 	overflow: hidden;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
 	position: absolute;
 	top: 67px;
 	left: 0;
@@ -236,6 +241,11 @@ white-space: nowrap;
 /* Раскрывает меню */
 .nav-links.is-toggle {
 	max-height: 100vh;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
 }
 .nav-links a {
 	margin: 2px auto;
