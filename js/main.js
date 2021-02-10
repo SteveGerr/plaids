@@ -30,6 +30,7 @@ function toggle() {
         console.log("click");
         toggleBlock.classList.toggle("is-toggle");
       });
+      return false;
     }
 };
 toggle();
