@@ -30,11 +30,6 @@ function toggle() {
         console.log("click");
         toggleBlock.classList.toggle("is-toggle");
       });
-      burgerBtn.addEventListener("touchmove", () => {
-        console.log("click");
-        toggleBlock.classList.toggle("is-toggle");
-      });
-
     }
 };
 toggle();
