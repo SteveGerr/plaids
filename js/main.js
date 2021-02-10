@@ -28,8 +28,13 @@ function toggle() {
     burgerBtn.addEventListener("click", () => {
       console.log("click");
       toggleBlock.classList.toggle("is-toggle");
-    });
-    return false;
+    }, false);
+    burgerBtn.addEventListener("touchend", (e) => {
+      e.preventDefault();
+      e.target.click();
+      console.log("click");
+      toggleBlock.classList.toggle("is-toggle");
+    }, false);
 };
 toggle();
 
