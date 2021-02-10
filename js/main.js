@@ -22,7 +22,7 @@ var swiper = new Swiper('.swiper-container', {
     });
 
 // Раскрывает/закрывает список меню
-(function() {
+function toggle() {
   let burgerBtn = document.querySelector(".nav-burger"),
     toggleBlock = document.querySelector(".nav-links");
     if (burgerBtn && toggleBlock) {
@@ -36,6 +36,7 @@ var swiper = new Swiper('.swiper-container', {
       });
 
     }
-})()
+};
+toggle();
 
 
