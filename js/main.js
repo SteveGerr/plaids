@@ -25,16 +25,22 @@ var swiper = new Swiper('.swiper-container', {
 function toggle() {
   let burgerBtn = document.querySelector(".nav-burger"),
     toggleBlock = document.querySelector(".nav-links");
-    burgerBtn.addEventListener("click", () => {
-      console.log("click");
-      toggleBlock.classList.toggle("is-toggle");
-    }, false);
-    burgerBtn.addEventListener("touchend", (e) => {
-      e.preventDefault();
-      e.target.click();
-      console.log("click");
-      toggleBlock.classList.toggle("is-toggle");
-    }, false);
+    isTouch = ("ontouchstart" in window);
+
+    if (isTouch) {
+      burgerBtn.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        e.target.click();
+        console.log("click");
+        toggleBlock.classList.toggle("is-toggle");
+      }, false);
+    } else {
+      burgerBtn.addEventListener("click", () => {
+        console.log("click");
+        toggleBlock.classList.toggle("is-toggle");
+      }, false);
+
+    }
 };
 toggle();
 
