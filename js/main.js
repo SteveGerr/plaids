@@ -25,13 +25,11 @@ var swiper = new Swiper('.swiper-container', {
 function toggle() {
   let burgerBtn = document.querySelector(".nav-burger"),
     toggleBlock = document.querySelector(".nav-links");
-    if (burgerBtn && toggleBlock) {
-      burgerBtn.addEventListener("click", () => {
-        console.log("click");
-        toggleBlock.classList.toggle("is-toggle");
-      });
-      return false;
-    }
+    burgerBtn.addEventListener("click", () => {
+      console.log("click");
+      toggleBlock.classList.toggle("is-toggle");
+    });
+    return false;
 };
 toggle();
 
